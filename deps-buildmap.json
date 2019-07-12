@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "lodash/clone.js": "./dist-deps/clone-486b986d.js",
+    "@babel/core": "./dist-deps/core-3c839986.js"
+  }
+}

@@ -1,0 +1,1 @@
+System.register(["./chunk-7f8a0b54.js"],function(t,e){"use strict";var n;return{setters:[function(t){n=t.d}],execute:function(){var t=n();console.log(t({a:"b"})),e.import("./chunk-3ab18440.js").then(({default:t})=>{console.log(t.transform("test").code)})}}});

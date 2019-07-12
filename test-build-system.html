@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<script defer>
+  // modernBuild = Modules + Dynamic Import support
+  import('./dist/test.js');
+  window.modernBuild = true;
+</script>
+<script defer>
+  if (!window.modernBuild) {
+    document.head.appendChild(
+      Object.assign(document.createElement('script'), {
+        src: 'jspm_packages/npm/systemjs@4.0.2/dist/s.min.js',
+        onload: function() {
+          System.import('dist-system/test.js');
+        }
+      })
+    );
+  }
+</script>

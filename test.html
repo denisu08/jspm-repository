@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<script>
+  (async () => {
+    document.head.appendChild(
+      Object.assign(document.createElement('script'), {
+        type: 'importmap',
+        innerHTML: await (await fetch('./importmap.json')).text()
+      })
+    );
+    import('./test.js');
+  })();
+</script>
